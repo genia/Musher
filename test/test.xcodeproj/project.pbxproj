@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBD8EDFB2D671414003BFE79 /* test_hpcp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBD8EDD72D671414003BFE79 /* test_hpcp.cpp */; };
+		FBD8EDFC2D671414003BFE79 /* audio_decoders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBD8EDE22D671414003BFE79 /* audio_decoders.cpp */; };
+		FBD8EDFD2D671414003BFE79 /* test_peak_detect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBD8EDDB2D671414003BFE79 /* test_peak_detect.cpp */; };
+		FBD8EDFE2D671414003BFE79 /* peak_detect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBD8EDF12D671414003BFE79 /* peak_detect.cpp */; };
+		FBD8EDFF2D671414003BFE79 /* mono_mixer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBD8EDEF2D671414003BFE79 /* mono_mixer.cpp */; };
+		FBD8EE002D671414003BFE79 /* test_framecutter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBD8EDD62D671414003BFE79 /* test_framecutter.cpp */; };
+		FBD8EE012D671414003BFE79 /* test_windowing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBD8EDDD2D671414003BFE79 /* test_windowing.cpp */; };
+		FBD8EE022D671414003BFE79 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBD8EDD32D671414003BFE79 /* main.cpp */; };
+		FBD8EE032D671414003BFE79 /* bpm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBD8EDE42D671414003BFE79 /* bpm.cpp */; };
+		FBD8EE042D671414003BFE79 /* test_beat_detect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBD8EDD52D671414003BFE79 /* test_beat_detect.cpp */; };
+		FBD8EE052D671414003BFE79 /* key.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBD8EDED2D671414003BFE79 /* key.cpp */; };
+		FBD8EE062D671414003BFE79 /* fft_convolve.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBD8EDE72D671414003BFE79 /* fft_convolve.cpp */; };
+		FBD8EE072D671414003BFE79 /* windowing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBD8EDF92D671414003BFE79 /* windowing.cpp */; };
+		FBD8EE082D671414003BFE79 /* test_spectrum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBD8EDDC2D671414003BFE79 /* test_spectrum.cpp */; };
+		FBD8EE092D671414003BFE79 /* test_musher_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBD8EDDA2D671414003BFE79 /* test_musher_utils.cpp */; };
+		FBD8EE0A2D671414003BFE79 /* hpcp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBD8EDEB2D671414003BFE79 /* hpcp.cpp */; };
+		FBD8EE0B2D671414003BFE79 /* spectral_peaks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBD8EDF32D671414003BFE79 /* spectral_peaks.cpp */; };
+		FBD8EE0C2D671414003BFE79 /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBD8EDDF2D671414003BFE79 /* utils.cpp */; };
+		FBD8EE0D2D671414003BFE79 /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBD8EDF72D671414003BFE79 /* utils.cpp */; };
+		FBD8EE0E2D671414003BFE79 /* spectrum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBD8EDF52D671414003BFE79 /* spectrum.cpp */; };
+		FBD8EE0F2D671414003BFE79 /* test_key.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBD8EDD82D671414003BFE79 /* test_key.cpp */; };
+		FBD8EE102D671414003BFE79 /* test_mono_mixer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBD8EDD92D671414003BFE79 /* test_mono_mixer.cpp */; };
+		FBD8EE112D671414003BFE79 /* framecutter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBD8EDE92D671414003BFE79 /* framecutter.cpp */; };
+		FBD8EE122D671414003BFE79 /* test_audio_decoders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBD8EDD42D671414003BFE79 /* test_audio_decoders.cpp */; };
+		FBD8EE142D6718E4003BFE79 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBD8EE132D6718E4003BFE79 /* libgtest.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FBD8EDC52D6713EB003BFE79 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FBD8EDC72D6713EB003BFE79 /* test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBD8EDD12D671414003BFE79 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		FBD8EDD22D671414003BFE79 /* gtest_extras.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gtest_extras.h; sourceTree = "<group>"; };
+		FBD8EDD32D671414003BFE79 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		FBD8EDD42D671414003BFE79 /* test_audio_decoders.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test_audio_decoders.cpp; sourceTree = "<group>"; };
+		FBD8EDD52D671414003BFE79 /* test_beat_detect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test_beat_detect.cpp; sourceTree = "<group>"; };
+		FBD8EDD62D671414003BFE79 /* test_framecutter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test_framecutter.cpp; sourceTree = "<group>"; };
+		FBD8EDD72D671414003BFE79 /* test_hpcp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test_hpcp.cpp; sourceTree = "<group>"; };
+		FBD8EDD82D671414003BFE79 /* test_key.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test_key.cpp; sourceTree = "<group>"; };
+		FBD8EDD92D671414003BFE79 /* test_mono_mixer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test_mono_mixer.cpp; sourceTree = "<group>"; };
+		FBD8EDDA2D671414003BFE79 /* test_musher_utils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test_musher_utils.cpp; sourceTree = "<group>"; };
+		FBD8EDDB2D671414003BFE79 /* test_peak_detect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test_peak_detect.cpp; sourceTree = "<group>"; };
+		FBD8EDDC2D671414003BFE79 /* test_spectrum.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test_spectrum.cpp; sourceTree = "<group>"; };
+		FBD8EDDD2D671414003BFE79 /* test_windowing.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test_windowing.cpp; sourceTree = "<group>"; };
+		FBD8EDDE2D671414003BFE79 /* utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		FBD8EDDF2D671414003BFE79 /* utils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = utils.cpp; sourceTree = "<group>"; };
+		FBD8EDE12D671414003BFE79 /* audio_decoders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = audio_decoders.h; sourceTree = "<group>"; };
+		FBD8EDE22D671414003BFE79 /* audio_decoders.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = audio_decoders.cpp; sourceTree = "<group>"; };
+		FBD8EDE32D671414003BFE79 /* bpm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bpm.h; sourceTree = "<group>"; };
+		FBD8EDE42D671414003BFE79 /* bpm.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bpm.cpp; sourceTree = "<group>"; };
+		FBD8EDE52D671414003BFE79 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		FBD8EDE62D671414003BFE79 /* fft_convolve.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fft_convolve.h; sourceTree = "<group>"; };
+		FBD8EDE72D671414003BFE79 /* fft_convolve.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = fft_convolve.cpp; sourceTree = "<group>"; };
+		FBD8EDE82D671414003BFE79 /* framecutter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = framecutter.h; sourceTree = "<group>"; };
+		FBD8EDE92D671414003BFE79 /* framecutter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = framecutter.cpp; sourceTree = "<group>"; };
+		FBD8EDEA2D671414003BFE79 /* hpcp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hpcp.h; sourceTree = "<group>"; };
+		FBD8EDEB2D671414003BFE79 /* hpcp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = hpcp.cpp; sourceTree = "<group>"; };
+		FBD8EDEC2D671414003BFE79 /* key.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = key.h; sourceTree = "<group>"; };
+		FBD8EDED2D671414003BFE79 /* key.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = key.cpp; sourceTree = "<group>"; };
+		FBD8EDEE2D671414003BFE79 /* mono_mixer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mono_mixer.h; sourceTree = "<group>"; };
+		FBD8EDEF2D671414003BFE79 /* mono_mixer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mono_mixer.cpp; sourceTree = "<group>"; };
+		FBD8EDF02D671414003BFE79 /* peak_detect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = peak_detect.h; sourceTree = "<group>"; };
+		FBD8EDF12D671414003BFE79 /* peak_detect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = peak_detect.cpp; sourceTree = "<group>"; };
+		FBD8EDF22D671414003BFE79 /* spectral_peaks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = spectral_peaks.h; sourceTree = "<group>"; };
+		FBD8EDF32D671414003BFE79 /* spectral_peaks.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = spectral_peaks.cpp; sourceTree = "<group>"; };
+		FBD8EDF42D671414003BFE79 /* spectrum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = spectrum.h; sourceTree = "<group>"; };
+		FBD8EDF52D671414003BFE79 /* spectrum.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = spectrum.cpp; sourceTree = "<group>"; };
+		FBD8EDF62D671414003BFE79 /* utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		FBD8EDF72D671414003BFE79 /* utils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = utils.cpp; sourceTree = "<group>"; };
+		FBD8EDF82D671414003BFE79 /* windowing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = windowing.h; sourceTree = "<group>"; };
+		FBD8EDF92D671414003BFE79 /* windowing.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = windowing.cpp; sourceTree = "<group>"; };
+		FBD8EE132D6718E4003BFE79 /* libgtest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest.a; path = /opt/homebrew/Cellar/googletest/1.16.0/lib/libgtest.a; sourceTree = "<absolute>"; };
+		FBD8EE152D671A9C003BFE79 /* notes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = notes.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBD8EDC42D6713EB003BFE79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBD8EE142D6718E4003BFE79 /* libgtest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBD8EDBE2D6713EB003BFE79 = {
+			isa = PBXGroup;
+			children = (
+				FBD8EE152D671A9C003BFE79 /* notes.txt */,
+				FBD8EE132D6718E4003BFE79 /* libgtest.a */,
+				FBD8EDFA2D671414003BFE79 /* core */,
+				FBD8EDC82D6713EB003BFE79 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBD8EDC82D6713EB003BFE79 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBD8EDC72D6713EB003BFE79 /* test */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBD8EDE02D671414003BFE79 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				FBD8EDD12D671414003BFE79 /* CMakeLists.txt */,
+				FBD8EDD22D671414003BFE79 /* gtest_extras.h */,
+				FBD8EDD32D671414003BFE79 /* main.cpp */,
+				FBD8EDD42D671414003BFE79 /* test_audio_decoders.cpp */,
+				FBD8EDD52D671414003BFE79 /* test_beat_detect.cpp */,
+				FBD8EDD62D671414003BFE79 /* test_framecutter.cpp */,
+				FBD8EDD72D671414003BFE79 /* test_hpcp.cpp */,
+				FBD8EDD82D671414003BFE79 /* test_key.cpp */,
+				FBD8EDD92D671414003BFE79 /* test_mono_mixer.cpp */,
+				FBD8EDDA2D671414003BFE79 /* test_musher_utils.cpp */,
+				FBD8EDDB2D671414003BFE79 /* test_peak_detect.cpp */,
+				FBD8EDDC2D671414003BFE79 /* test_spectrum.cpp */,
+				FBD8EDDD2D671414003BFE79 /* test_windowing.cpp */,
+				FBD8EDDE2D671414003BFE79 /* utils.h */,
+				FBD8EDDF2D671414003BFE79 /* utils.cpp */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		FBD8EDFA2D671414003BFE79 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				FBD8EDE02D671414003BFE79 /* test */,
+				FBD8EDE12D671414003BFE79 /* audio_decoders.h */,
+				FBD8EDE22D671414003BFE79 /* audio_decoders.cpp */,
+				FBD8EDE32D671414003BFE79 /* bpm.h */,
+				FBD8EDE42D671414003BFE79 /* bpm.cpp */,
+				FBD8EDE52D671414003BFE79 /* CMakeLists.txt */,
+				FBD8EDE62D671414003BFE79 /* fft_convolve.h */,
+				FBD8EDE72D671414003BFE79 /* fft_convolve.cpp */,
+				FBD8EDE82D671414003BFE79 /* framecutter.h */,
+				FBD8EDE92D671414003BFE79 /* framecutter.cpp */,
+				FBD8EDEA2D671414003BFE79 /* hpcp.h */,
+				FBD8EDEB2D671414003BFE79 /* hpcp.cpp */,
+				FBD8EDEC2D671414003BFE79 /* key.h */,
+				FBD8EDED2D671414003BFE79 /* key.cpp */,
+				FBD8EDEE2D671414003BFE79 /* mono_mixer.h */,
+				FBD8EDEF2D671414003BFE79 /* mono_mixer.cpp */,
+				FBD8EDF02D671414003BFE79 /* peak_detect.h */,
+				FBD8EDF12D671414003BFE79 /* peak_detect.cpp */,
+				FBD8EDF22D671414003BFE79 /* spectral_peaks.h */,
+				FBD8EDF32D671414003BFE79 /* spectral_peaks.cpp */,
+				FBD8EDF42D671414003BFE79 /* spectrum.h */,
+				FBD8EDF52D671414003BFE79 /* spectrum.cpp */,
+				FBD8EDF62D671414003BFE79 /* utils.h */,
+				FBD8EDF72D671414003BFE79 /* utils.cpp */,
+				FBD8EDF82D671414003BFE79 /* windowing.h */,
+				FBD8EDF92D671414003BFE79 /* windowing.cpp */,
+			);
+			name = core;
+			path = ../src/core;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBD8EDC62D6713EB003BFE79 /* test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBD8EDCE2D6713EB003BFE79 /* Build configuration list for PBXNativeTarget "test" */;
+			buildPhases = (
+				FBD8EDC32D6713EB003BFE79 /* Sources */,
+				FBD8EDC42D6713EB003BFE79 /* Frameworks */,
+				FBD8EDC52D6713EB003BFE79 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = test;
+			packageProductDependencies = (
+			);
+			productName = test;
+			productReference = FBD8EDC72D6713EB003BFE79 /* test */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBD8EDBF2D6713EB003BFE79 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					FBD8EDC62D6713EB003BFE79 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = FBD8EDC22D6713EB003BFE79 /* Build configuration list for PBXProject "test" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBD8EDBE2D6713EB003BFE79;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = FBD8EDC82D6713EB003BFE79 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBD8EDC62D6713EB003BFE79 /* test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBD8EDC32D6713EB003BFE79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBD8EDFB2D671414003BFE79 /* test_hpcp.cpp in Sources */,
+				FBD8EDFC2D671414003BFE79 /* audio_decoders.cpp in Sources */,
+				FBD8EDFD2D671414003BFE79 /* test_peak_detect.cpp in Sources */,
+				FBD8EDFE2D671414003BFE79 /* peak_detect.cpp in Sources */,
+				FBD8EDFF2D671414003BFE79 /* mono_mixer.cpp in Sources */,
+				FBD8EE002D671414003BFE79 /* test_framecutter.cpp in Sources */,
+				FBD8EE012D671414003BFE79 /* test_windowing.cpp in Sources */,
+				FBD8EE022D671414003BFE79 /* main.cpp in Sources */,
+				FBD8EE032D671414003BFE79 /* bpm.cpp in Sources */,
+				FBD8EE042D671414003BFE79 /* test_beat_detect.cpp in Sources */,
+				FBD8EE052D671414003BFE79 /* key.cpp in Sources */,
+				FBD8EE062D671414003BFE79 /* fft_convolve.cpp in Sources */,
+				FBD8EE072D671414003BFE79 /* windowing.cpp in Sources */,
+				FBD8EE082D671414003BFE79 /* test_spectrum.cpp in Sources */,
+				FBD8EE092D671414003BFE79 /* test_musher_utils.cpp in Sources */,
+				FBD8EE0A2D671414003BFE79 /* hpcp.cpp in Sources */,
+				FBD8EE0B2D671414003BFE79 /* spectral_peaks.cpp in Sources */,
+				FBD8EE0C2D671414003BFE79 /* utils.cpp in Sources */,
+				FBD8EE0D2D671414003BFE79 /* utils.cpp in Sources */,
+				FBD8EE0E2D671414003BFE79 /* spectrum.cpp in Sources */,
+				FBD8EE0F2D671414003BFE79 /* test_key.cpp in Sources */,
+				FBD8EE102D671414003BFE79 /* test_mono_mixer.cpp in Sources */,
+				FBD8EE112D671414003BFE79 /* framecutter.cpp in Sources */,
+				FBD8EE122D671414003BFE79 /* test_audio_decoders.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FBD8EDCC2D6713EB003BFE79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FBD8EDCD2D6713EB003BFE79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FBD8EDCF2D6713EB003BFE79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"TEST_DATA_DIR=\\\"$(SRCROOT)/../data/\\\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					/opt/homebrew/include,
+					"$(SRCROOT)/..",
+					"$(SRCROOT)/../src/third-party",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/googletest/1.16.0/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FBD8EDD02D6713EB003BFE79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				HEADER_SEARCH_PATHS = (
+					/opt/homebrew/include,
+					"$(SRCROOT)/..",
+					"$(SRCROOT)/../src/third-party",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/googletest/1.16.0/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBD8EDC22D6713EB003BFE79 /* Build configuration list for PBXProject "test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBD8EDCC2D6713EB003BFE79 /* Debug */,
+				FBD8EDCD2D6713EB003BFE79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBD8EDCE2D6713EB003BFE79 /* Build configuration list for PBXNativeTarget "test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBD8EDCF2D6713EB003BFE79 /* Debug */,
+				FBD8EDD02D6713EB003BFE79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBD8EDBF2D6713EB003BFE79 /* Project object */;
+}
