@@ -134,3 +134,54 @@ TEST(Key, EstimateKeyEbMajorEDM) {
   EXPECT_NEAR(key_output.strength, 0.613304, 0.000001);
   EXPECT_NEAR(key_output.first_to_second_relative_strength, 0.516593, 0.000001);
 }
+
+namespace fs = std::filesystem;
+
+std::vector<std::string> get_all_files_in_directory(const std::string& directory_path) {
+    std::vector<std::string> file_paths;
+    for (const auto& entry : fs::directory_iterator(directory_path)) {
+        if (fs::is_regular_file(entry.status())) {
+            file_paths.push_back(entry.path().string());
+        }
+    }
+    return file_paths;
+}
+static bool ends_with(std::string_view str, std::string_view suffix)
+{
+    return str.size() >= suffix.size() && str.compare(str.size()-suffix.size(), suffix.size(), suffix) == 0;
+}
+
+/**
+ * @brief Detect Key C Major Classical Mp3
+ *
+ */
+TEST(Key, DetectGZ) {
+    std::string directory_path = "/Users/zilberstein/Music/!Nickodemus - The Wonderwheel Spins 2013"; // Current directory
+    std::vector<std::string> files = get_all_files_in_directory(directory_path);
+
+    for (const auto& file_path : files) {//const std::string file_path = "/Users/zilberstein/Music/!Nickodemus - The Wonderwheel Spins 2013/Wonderwheel Recordings - The Wonderwheel Spins 2013 - 05 Gypsy Stepper.mp3";
+        if (!ends_with(file_path, ".mp3"))
+            continue;
+        Mp3Decoded wav_decoded = DecodeMp3(file_path);
+        std::vector<std::vector<double>> normalized_samples = wav_decoded.normalized_samples;
+        double sample_rate = wav_decoded.sample_rate;
+        
+        KeyOutput key_output = DetectKey(normalized_samples, sample_rate, "Bgate",
+                                         /* use_polphony */ true,
+                                         /* use_three_chords */ true,
+                                         /* num_harmonics */ 4,
+                                         /* slope */ 0.6,
+                                         /* use_maj_min */ false,
+                                         /* pcp_size */ 36,
+                                         /* frame_size */ 32768,
+                                         /* hop_size */ 4096,
+                                         /*const std::function<std::vector<double>(const std::vector<double>&)>& window_type_func */ BlackmanHarris62dB,
+                                         /* max_num_peaks */ 100,
+                                         /* window_size */ .5 );
+        std::cout << file_path << " key " << key_output.key << key_output.scale << std::endl;
+//        EXPECT_EQ(key_output.key, "F");
+//        EXPECT_EQ(key_output.scale, "minor");
+//        EXPECT_NEAR(key_output.strength, 0.614904, 0.000001);
+//        EXPECT_NEAR(key_output.first_to_second_relative_strength, 0.192236, 0.000001);
+    }
+}
